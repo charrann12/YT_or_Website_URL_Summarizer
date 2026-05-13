@@ -17,7 +17,7 @@ The app extracts the content, processes it using LangChain document loaders, and
 - Fast inference using Groq LLMs
 - Streamlit-based interactive UI
 - URL validation
-- Supports long content summarization using LangChain `map_reduce` chain
+- Supports long content summarization using LangChain `stuff` chain
 
 ---
 
@@ -28,19 +28,7 @@ The app extracts the content, processes it using LangChain document loaders, and
 - LangChain
 - Groq API
 - YouTube Transcript API
-- Unstructured
 - Validators
-
----
-
-## Project Structure
-
-```bash
-.
-├── app.py
-├── requirements.txt
-└── README.md
-```
 
 ---
 
@@ -49,8 +37,7 @@ The app extracts the content, processes it using LangChain document loaders, and
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/charrann12/YT_or_Website_URL_Summarizer.git
 ```
 
 ### 2. Create virtual environment
@@ -59,42 +46,6 @@ cd your-repo-name
 python -m venv venv
 ```
 
-### 3. Activate virtual environment
-
-#### Mac/Linux
-
-```bash
-source venv/bin/activate
-```
-
-#### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-### 4. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Required Packages
-
-```txt
-streamlit
-langchain
-langchain-community
-langchain-groq
-validators
-youtube-transcript-api
-unstructured
-pytube
-```
-
----
 
 ## Run the Application
 
@@ -124,16 +75,6 @@ llama-3.3-70b-versatile
 You can also use:
 - `llama-4-scout-17b-16e-instruct`
 - `llama-4-maverick-17b-128e-instruct`
-
----
-
-## Future Improvements
-
-- PDF summarization
-- Multi-language support
-- Download summary as PDF
-- Chat with summarized content
-- Transcript display feature
 
 ---
 

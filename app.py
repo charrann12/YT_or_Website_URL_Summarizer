@@ -27,7 +27,7 @@ prompt_template = """
 
 prompt = PromptTemplate(template = prompt_template, input_variables = ['text'])
 
-if st.button("Summmarize the Content from YT or website"):
+if st.button("Summmarize"):
 
     ## Validate all the inputs
     if not groq_api_key.strip() or not generic_url.strip():
